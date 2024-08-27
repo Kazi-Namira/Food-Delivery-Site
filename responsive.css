@@ -1,0 +1,204 @@
+@media screen and (min-width: 200px) and (max-width: 769px) {
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    /* box-sizing: border-box; */
+  }
+
+  .header {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    width: 113px;
+  }
+
+  .nav-img,
+  img {
+    width: 80px;
+    font-size: 20px;
+    /* margin: 0 auto; */
+    /* margin-bottom: 18px; */
+  }
+
+  .home-cart {
+    gap: 35px;
+  }
+  .search-box {
+    height: 30px;
+    width: 153px;
+    padding: 2px 2px;
+  }
+
+  .Banner {
+    flex-direction: column;
+  }
+
+  .banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bike-delivery {
+    height: 48px;
+    width: 166px;
+    margin-top: 25px;
+  }
+
+  .delivery-desc {
+    margin: 35px 20px;
+    font-size: 20px;
+  }
+
+  #delivery-desc {
+    gap: 0;
+  }
+
+  .about {
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+  }
+
+  .order {
+    margin: 35px 0;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-right {
+    margin: 35px auto;
+  }
+
+  .food-card {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    padding: 20px 0px;
+  }
+
+  .product-cards {
+    flex-direction: column;
+  }
+
+  .service-title {
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .service {
+    margin: auto;
+  }
+
+  .service-list {
+    flex-direction: column;
+  }
+
+  .service-desc {
+    font-size: 30px;
+    height: 290px;
+    width: auto;
+  }
+
+  .service-desc h6 {
+    margin: 20px auto;
+  }
+
+  .service-desc p {
+    width: 300px;
+  }
+
+  .testimonial {
+    margin: 35px auto;
+    font-size: 18px;
+  }
+
+  .testimonial-desc {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .testimonial-left {
+    height: 316px;
+    width: 265px;
+  }
+
+  .ceo-img img {
+    height: 104px;
+    width: 104px;
+    border-radius: 50px;
+  }
+
+  .testimonial-right {
+    height: auto;
+  }
+
+  .testimonial-right img {
+    height: auto;
+    width: 380px;
+  }
+
+  .subscribe {
+    height: auto;
+    width: 380px;
+    flex-direction: column;
+  }
+
+  .nav-img,
+  img {
+    width: 250px;
+  }
+
+  .subs-right {
+    background-color: transparent;
+    margin: 0;
+    width: 197px;
+  }
+
+  .email-box {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .subs-right input {
+    height: 29px;
+    width: 162px;
+  }
+
+  .email-box p {
+    height: 25px;
+    width: 60px;
+    font-size: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin: 50px auto;
+    gap: 20px;
+  }
+}
