@@ -1,204 +1,188 @@
-@media screen and (min-width: 200px) and (max-width: 769px) {
+@media screen and (max-width: 769px) {
   body {
-    max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
   }
 
-  * {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    /* box-sizing: border-box; */
-  }
-
-  .header {
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
   .nav {
-    display: flex;
     flex-direction: column;
-    width: 113px;
-  }
-
-  .nav-img,
-  img {
-    width: 80px;
-    font-size: 20px;
-    /* margin: 0 auto; */
-    /* margin-bottom: 18px; */
+    gap: 10px;
+    text-align: center;
   }
 
   .home-cart {
-    gap: 35px;
+    flex-direction: column;
+    gap: 10px;
   }
+
   .search-box {
-    height: 30px;
-    width: 153px;
-    padding: 2px 2px;
+    width: 90%;
+    justify-content: center;
+    gap: 10px;
   }
 
   .Banner {
     flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
   }
 
   .banner-left {
-    display: flex;
-    flex-direction: column;
+    width: 100% !important;
     align-items: center;
-    justify-content: center;
   }
 
-  .bike-delivery {
-    height: 48px;
-    width: 166px;
-    margin-top: 25px;
-  }
-
-  .delivery-desc {
-    margin: 35px 20px;
-    font-size: 20px;
+  .delivery-desc h1 {
+    font-size: 35px;
   }
 
   #delivery-desc {
-    gap: 0;
+    flex-direction: column;
+    gap: 5px;
   }
 
   .about {
-    font-size: 20px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* text-align: center; */
-    justify-content: center;
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 0 10px;
   }
 
   .order {
-    margin: 35px 0;
-    gap: 0;
-    display: flex;
     flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
 
   .banner-right {
-    margin: 35px auto;
+    width: 100%;
   }
 
   .food-card {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 
   .contact-info {
     flex-direction: column;
-    height: auto;
-    margin: auto;
-    padding: 20px 0px;
+    padding: 10px;
+    gap: 20px;
+    text-align: center;
   }
 
   .product-cards {
     flex-direction: column;
+    align-items: center;
   }
 
-  .service-title {
-    margin: auto;
-    font-size: 18px;
+  .product-card {
+    width: 90% !important;
   }
 
-  .service {
-    margin: auto;
+  .product-card-desc {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .see-more-product-btn {
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
   }
 
   .service-list {
     flex-direction: column;
+    gap: 20px;
   }
 
   .service-desc {
-    font-size: 30px;
-    height: 290px;
-    width: auto;
-  }
-
-  .service-desc h6 {
-    margin: 20px auto;
-  }
-
-  .service-desc p {
-    width: 300px;
-  }
-
-  .testimonial {
-    margin: 35px auto;
-    font-size: 18px;
+    width: 90%;
   }
 
   .testimonial-desc {
     flex-direction: column;
-    margin: 20px auto;
+    gap: 30px;
   }
 
-  .testimonial-left {
-    height: 316px;
-    width: 265px;
-  }
-
-  .ceo-img img {
-    height: 104px;
-    width: 104px;
-    border-radius: 50px;
-  }
-
+  .testimonial-left,
   .testimonial-right {
-    height: auto;
+    width: 90%;
   }
 
   .testimonial-right img {
+    width: 100%;
     height: auto;
-    width: 380px;
   }
 
   .subscribe {
-    height: auto;
-    width: 380px;
     flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
   }
 
-  .nav-img,
-  img {
-    width: 250px;
+  .subs-left img {
+    width: 100%;
+    height: auto;
   }
 
   .subs-right {
-    background-color: transparent;
-    margin: 0;
-    width: 197px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .subs-right input {
+    width: 90%;
+    margin: 10px auto;
   }
 
   .email-box {
     flex-direction: column;
-    margin: 20px auto;
-  }
-
-  .subs-right input {
-    height: 29px;
-    width: 162px;
+    gap: 10px;
+    align-items: center;
   }
 
   .email-box p {
-    height: 25px;
-    width: 60px;
-    font-size: 15px;
+    width: 100px;
   }
 
   .footer {
     flex-direction: column;
-    margin: 50px auto;
-    gap: 20px;
+    gap: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .company-logo,
+  .opening-restaurant,
+  .user-link,
+  .contact-us {
+    width: 100%;
+  }
+
+  #contact-us {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #contact-us input {
+    width: 80%;
+  }
+
+  #contact-us img {
+    margin: 0 auto;
+  }
+
+  .logos {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
