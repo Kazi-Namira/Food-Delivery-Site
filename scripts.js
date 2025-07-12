@@ -1,5 +1,4 @@
 const imageArray = [
-  // First 6 products
   {
     url: "./image/product/product 1.png",
     name: "Gyro Sandwich",
@@ -36,7 +35,6 @@ const imageArray = [
     rating: 4.9,
     price: "$15.00",
   },
-  // Next 6 products
   {
     url: "./image/product/product 1.png",
     name: "Gyro Sandwich",
@@ -82,43 +80,49 @@ function handleShowMoreProduct() {
   const seeMoreBtn = document.querySelector(".see-more-product-btn p");
 
   if (!productsShown) {
-    const productCards = document.createElement("div");
-    productCards.classList.add("product-cards");
-    productCards.id = "extra-products";
+    const extraCardsContainer = document.createElement("div");
+    extraCardsContainer.classList.add("product-cards");
+    extraCardsContainer.id = "extra-products";
 
-    for (let i = 6; i < 12; i++) {
-      const item = imageArray[i];
-      const productCard = document.createElement("div");
-      productCard.classList.add("product-card");
+    const extraProducts = imageArray.slice(6); // get products 7–12
 
-      productCard.innerHTML = `
-          <div class="product-card-img">
-            <img src="${item.url}" alt="${item.name}" />
+    extraProducts.forEach((item) => {
+      const card = document.createElement("div");
+      card.classList.add("product-card");
+
+      card.innerHTML = `
+        <div class="product-card-img">
+          <img src="${item.url}" alt="${item.name}" />
+        </div>
+        <div class="product-card-desc">
+          <div>
+            <h2>${item.name}</h2>
+            <p class="add-cart-btn">Add To Cart</p>
           </div>
-          <div class="product-card-desc">
-            <div>
-              <h2>${item.name}</h2>
-              <p id="add-cart-btn">Add To Cart</p>
-            </div>
-            <div>
-              <p>${item.rating}</p>
-              <p>${item.price}</p>
-            </div>
+          <div>
+            <p>${item.rating}</p>
+            <p>${item.price}</p>
           </div>
-        `;
+        </div>
+      `;
 
-      productCards.appendChild(productCard);
-    }
+      extraCardsContainer.appendChild(card);
+    });
 
-    productContainer.appendChild(productCards);
+    productContainer.appendChild(extraCardsContainer);
     seeMoreBtn.textContent = "See Less Products";
     productsShown = true;
   } else {
     const extraProducts = document.getElementById("extra-products");
     if (extraProducts) {
       extraProducts.remove();
+      window.scrollTo({
+        top: document.querySelector("#product-list").offsetTop,
+        behavior: "smooth",
+      });
     }
     seeMoreBtn.textContent = "See More Products";
     productsShown = false;
   }
 }
+
